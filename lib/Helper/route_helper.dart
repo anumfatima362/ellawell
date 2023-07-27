@@ -4,6 +4,7 @@ import 'package:ellawell/screens/Atuntication_screen/policy_screen.dart';
 import 'package:ellawell/screens/Atuntication_screen/profile_screen.dart';
 import 'package:ellawell/screens/Atuntication_screen/registration_with_phoneno.dart';
 import 'package:ellawell/screens/Home_Screen/home_screen.dart';
+import 'package:ellawell/screens/Messaging_screen/messaging_screen.dart';
 import 'package:flutter/cupertino.dart';
 import '../screens/Splash_Screen/splash_screen.dart';
 
@@ -18,6 +19,8 @@ import '../screens/Splash_Screen/splash_screen.dart';
    static const policy_screen = "/policy_screen";
    static const profile_screen = "/profileScreen";
    static const home_screen = "/homescreen";
+   static const messaging_screen = "/messagingscreen";
+
 
 
 
@@ -31,6 +34,8 @@ import '../screens/Splash_Screen/splash_screen.dart';
      policy_screen: (context) => const PolicyScreen(),
       profile_screen: (context) => const ProfileScreen(),
       home_screen: (context) => const HomeScreen(),
+      messaging_screen: (context) => const MessagingScreen(),
+
 
 
 

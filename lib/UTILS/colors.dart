@@ -22,6 +22,8 @@ const Map<int, Color> PrimarySwatch = {
 const  black = Color.fromRGBO(0, 0, 0, 1);
 const inactive_thumb_color = Color.fromRGBO(86,85,99,1);
 const inactive_track_color = Color.fromRGBO(158,158,158,1);
+const date_color = Color.fromRGBO(153,153,153,1);
+
 
 
 

@@ -1,3 +1,4 @@
+import 'package:ellawell/screens/Messaging_screen/messaging_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -44,11 +45,11 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                   break;
 
                 case 1:
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  HomeScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  MessagingScreen()));
                   break;
 
                 case 2:
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  MessagingScreen()));
                   break;
 
                 case 3:
