@@ -176,12 +176,9 @@ class ProfileScreen extends StatelessWidget {
 
 
             Expanded(
-
               child: TabBarView(
-
                 children: [
                   Container(
-
                     width: 200,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10),
@@ -194,13 +191,13 @@ class ProfileScreen extends StatelessWidget {
                             mainAxisSpacing: 2,
                             crossAxisSpacing: 4,
                             crossAxisCount: 3,
-                            childAspectRatio: 0.70,
+                            childAspectRatio: 0.99,
                           ),
                           itemBuilder:(context,index){
                             return Container(
                               width: 100,
                               //color: Colors.red,
-                              child: SvgPicture.asset(Images.picture),
+                              child: SvgPicture.asset(Images.image, height: 80,),
                             );
                           }
                       ),

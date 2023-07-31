@@ -61,32 +61,28 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
               BottomNavigationBarItem(
                 label: "",
                 icon:SvgPicture.asset(Images.home,)
-                //Icon(Icons.home_outlined, size: 30,),
-                //Image(image: AssetImage('assets/images/Home.png'),)
+
               ),
 
 
               BottomNavigationBarItem(
                 label: "",
                 icon:SvgPicture.asset(Images.wallet,)
-                //Image(image: AssetImage('assets/images/comment.png',),),
-                //Icon(Icons.wallet_outlined, size: 30,),
+
               ),
 
 
               BottomNavigationBarItem(
                 label: "",
                 icon:SvgPicture.asset(Images.Email)
-                //Icon(Icons.mail_outline_outlined, size: 30,color: Colors.black,),
-               // Image(image: AssetImage('assets/images/Email.png'),)
+
               ),
 
 
               BottomNavigationBarItem(
                 label: "",
                  icon:SvgPicture.asset(Images.person)
-                 //Icon(Icons.person_2_outlined, size: 30,color: Colors.black,),
-               // Image(image: AssetImage('assets/images/profile.png'),)
+
               ),
 
            ]

@@ -32,6 +32,8 @@ import 'package:flutter/material.dart';
   static const String profile_frame = 'assets/images/profile_frame(2).svg';
   static const String white_angled_triagle = 'assets/images/white_frame.svg';
   static const String unsplash = 'assets/images/Unsplash.svg';
+  static const String image = 'assets/images/pictureimage.svg';
+
 
 
 
