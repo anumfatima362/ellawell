@@ -1,7 +1,9 @@
 import 'package:ellawell/CustomWidgets/custom_black_button.dart';
 import 'package:ellawell/CustomWidgets/sized_box_widgets.dart';
 import 'package:ellawell/Helper/route_helper.dart';
+import 'package:ellawell/UTILS/images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../CustomWidgets/Custom_Text.dart';
 import '../../UTILS/colors.dart';
 
@@ -23,7 +25,11 @@ class SignIn extends StatelessWidget {
           children: [
             34.height(context),
 
-          Center(child: Image(image: AssetImage('assets/images/app_title.png'))),
+          Center(child:
+
+          // SvgPicture.asset(Images.apptittle),),
+          Image(image: AssetImage(Images.apptittle)
+          )),
 
             52.height(context),
 
@@ -49,7 +55,7 @@ class SignIn extends StatelessWidget {
               child: BlackButton(
                 butontxt: 'Continue with Phone',
                 color: black,
-                svgAssetPath: 'assets/images/phone_no.svg',
+                svgAssetPath: Images.phoneicon,
 
               ),
             ),
@@ -109,7 +115,7 @@ class SignIn extends StatelessWidget {
                     child: BlackButton(
                     butontxt: "Continue with Google",
                      color: gray,
-                      svgAssetPath: 'assets/images/google.svg',
+                      svgAssetPath: Images.goggleicon,
 
                     ),
                   ),
@@ -121,7 +127,7 @@ class SignIn extends StatelessWidget {
                    child: BlackButton(
                      butontxt: "Continue with Apple",
                      color: gray,
-                     svgAssetPath: 'assets/images/apple.svg',
+                     svgAssetPath: Images.appleicon,
 
                    ),
                  ),

@@ -5,6 +5,7 @@ import 'package:ellawell/CustomWidgets/sized_box_widgets.dart';
 import 'package:ellawell/UTILS/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import '../../UTILS/images.dart';
 
 
 
@@ -25,12 +26,20 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Row(
             children: [
             145.width(context),
-             Image(image: AssetImage('assets/images/ellavell-logo.png')),
+
+           SvgPicture.asset(Images.elavell_logo),
+
+
 
             120.width(context) ,
               Container(
                   height: 20,
-                  child: Image(image: AssetImage('assets/images/setttings.png', ))),
+                  child: SvgPicture.asset(Images.settings),
+
+
+
+
+              ),
             ],
           ),
         ),
@@ -41,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
+          //SvgPicture.asset('assets/images/portfolio_image.svg'),
 
         Container(
           height: 90.h(context),
@@ -80,11 +90,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                    ) ,
                   10.width(context),
-                    Image(image: AssetImage('assets/images/Image.png')),
+                    SvgPicture.asset(Images.gallery),
+
                      5.width(context),
-                     Image(image: AssetImage('assets/images/camera.png')),
+                     SvgPicture.asset(Images.camera),
+
                      5.width(context),
-                     Image(image: AssetImage('assets/images/person_icon.png'))
+                     SvgPicture.asset(Images.profile),
+
                    ],
                  ),
               ),
@@ -127,10 +140,9 @@ class _HomeScreenState extends State<HomeScreen> {
                            Container(
                              child: Row(
                                children: [
-                                 //Text('DIRKFDRF'),
                                  CircleAvatar(
                                    radius: 28,
-                                   backgroundImage: AssetImage('assets/images/profice_pic.png'),
+                                  child: SvgPicture.asset(Images.profile_image,height: 60,width: 2,)
                                  ),
 
                                  10.width(context),
@@ -168,11 +180,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                height: 187.h(context),
                                width: 188.w(context),
                                decoration: BoxDecoration(
-                                   image: DecorationImage(
-                                       image: AssetImage('assets/images/girl_image.png')
-
-                                   )
                                ),
+                               child: SvgPicture.asset(Images.picture),
                              ),
                            ),
 
@@ -195,9 +204,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                       width: 25.w(context),
                                        decoration: BoxDecoration(
                                         color:white,
-                                       image: DecorationImage(
-                                        image: AssetImage('assets/images/smily.png'),
-                                      ),
                                          shape: BoxShape.circle,
                                          boxShadow: [
                                            BoxShadow(
@@ -211,7 +217,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                            color: Colors.grey.shade300, // Outline color
                                            width: 1,
                                          ),
-                                      ),
+                                         ),
+                                         child:SvgPicture.asset(Images.smiely,) ,
                                       ),
 
                                         Positioned(
@@ -220,10 +227,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                             height:25.h(context),
                                             width: 25.w(context),
                                             decoration: BoxDecoration(
-                                              color:white,
-                                              image: DecorationImage(
-                                                image: AssetImage('assets/images/100_icon.png'),
-                                              ),
+                                               color:white,
                                               shape: BoxShape.circle,
                                               boxShadow: [
                                                 BoxShadow(
@@ -238,6 +242,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 width: 1,
                                               ),
                                             ),
+                                            child: SvgPicture.asset(Images.icon_100),
                                           ),
                                         ),
 
@@ -248,9 +253,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                             width: 25.w(context),
                                             decoration: BoxDecoration(
                                               color:white,
-                                              image: DecorationImage(
-                                                image: AssetImage('assets/images/smily.png'),
-                                              ),
                                               shape: BoxShape.circle,
                                               boxShadow: [
                                                 BoxShadow(
@@ -265,6 +267,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 width: 1,
                                               ),
                                             ),
+                                            child: SvgPicture.asset(Images.smiely,),
                                           ),
                                         ),
 
@@ -310,7 +313,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                children: [
                                  CircleAvatar(
                                    radius: 28,
-                                   backgroundImage: AssetImage('assets/images/girl2.png'),
+                                   child: SvgPicture.asset(Images.girl_profile),
                                  ),
 
                                  5.width(context),
@@ -338,7 +341,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                    5.height(context),
                                      Row(
                                        children: [
-                                        Image(image: AssetImage('assets/images/100_icon.png')),
+                                         SvgPicture.asset(Images.icon_100), //
 
                                          5.width(context),
                                          CustomText(
@@ -355,7 +358,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                ],
 
                              ),
-                             Image(image: AssetImage('assets/images/girl4.png')),
+                             SvgPicture.asset(Images.women_profile),
+
+
                            ],
                          ),
 
@@ -375,7 +380,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
                                CircleAvatar(
                                  radius: 28,
-                                 backgroundImage: AssetImage('assets/images/girl5.png'),
+
+                                 child: SvgPicture.asset(Images.girl_profile_2,height: 60,),
                                ),
 
                                10.width(context),

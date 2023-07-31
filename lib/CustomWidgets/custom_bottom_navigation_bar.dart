@@ -1,13 +1,13 @@
+import 'package:ellawell/screens/Atuntication_screen/edit_profile_screen.dart';
+import 'package:ellawell/screens/Balance_screen/balance.dart';
 import 'package:ellawell/screens/Messaging_screen/messaging_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import '../UTILS/colors.dart';
 import '../screens/Home_Screen/home_screen.dart';
-
-
-
-
+import '../../UTILS/images.dart';
+import '../screens/Profile_Screen/profile_screen.dart';
 
 
 class CustomNavigationBar extends StatefulWidget {
@@ -45,7 +45,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                   break;
 
                 case 1:
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  MessagingScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  BalanceScreen()));
                   break;
 
                 case 2:
@@ -53,36 +53,40 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
                   break;
 
                 case 3:
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
-                  break;
-
-                case 4:
-                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => ProfileScreen()));
                   break;
               }
             },
             items: [
               BottomNavigationBarItem(
                 label: "",
-                icon:Image(image: AssetImage('assets/images/Home.png'),)
+                icon:SvgPicture.asset(Images.home,)
+                //Icon(Icons.home_outlined, size: 30,),
+                //Image(image: AssetImage('assets/images/Home.png'),)
               ),
 
 
               BottomNavigationBarItem(
                 label: "",
-                icon:Image(image: AssetImage('assets/images/comment.png'),),
+                icon:SvgPicture.asset(Images.wallet,)
+                //Image(image: AssetImage('assets/images/comment.png',),),
+                //Icon(Icons.wallet_outlined, size: 30,),
               ),
 
 
               BottomNavigationBarItem(
                 label: "",
-                icon:Image(image: AssetImage('assets/images/Email.png'),)
+                icon:SvgPicture.asset(Images.Email)
+                //Icon(Icons.mail_outline_outlined, size: 30,color: Colors.black,),
+               // Image(image: AssetImage('assets/images/Email.png'),)
               ),
 
 
               BottomNavigationBarItem(
                 label: "",
-                icon:Image(image: AssetImage('assets/images/profile.png'),)
+                 icon:SvgPicture.asset(Images.person)
+                 //Icon(Icons.person_2_outlined, size: 30,color: Colors.black,),
+               // Image(image: AssetImage('assets/images/profile.png'),)
               ),
 
            ]

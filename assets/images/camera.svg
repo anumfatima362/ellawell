@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="27pt" height="27pt" viewBox="0 0 27 27">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(-1,0,0,-1,27,27)" d="M0 27H27V0H0V27Z"/>
+</clipPath>
+<mask id="mask_1">
+<g transform="matrix(-.28125,0,-0,.28125,27,0)">
+<image id="image_2" width="96" height="96" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAAAAADH8yjkAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAClUlEQVR4nO2Y304TQRTGh4SdJsAl9EJDvTUWEm8Q5UJvjc/Rlr4B
+hITIAwBuKegbUOEVoD6B0ZDWeFH1oiaExCvaRv645qhhZ9vdmdnO7jlNJJnv8uzs
+90vP7PScM4xZWVlZ3QaNvXjbvgKFrtq152N4/7vvVOZC9TtY/3vf4/wB2jmc//iH
+eH+A9+MowPIwf4ASCnAyHHCC8b8/3B/gAQKwYQJ4iQB8MgF8Tu+fN/HH5MgoQwAb
+qQFGGUqSozm32TPz1KvXdOc09nzvN9b9Rl6VK/3rNPb/dKwi7NH5A+wo8u9RAry8
+BKhQ+gNsSwDDT9JUDQnQpQV0JACtP4AFjALQ2S8szDjOzKNirTMCwGl5or94otAi
+Bvxcnwwvd1YuKQGteWk9WzqjA3zMyv6MzTaoAC2lP2O5uN+QAHDxUO3P2JOYfUgA
+WNf5M7ZKATjtfz/zlWYvVHP5FwJAWazIvPZrtrcbVMQiHtAR5yszMInUBWFS+y9v
+DNgXC94MRqsieoAGFET+Qz1NUHNLaMCC/zxSs0XNfYwGTPvPIzVb1NwsGiC2M7Kb
+ouZmyACREnBOBhh5isQmu+HwFtkmF/3n4dbSE1ONds41BtTEgt3BaEVED9GA4K+C
+H/eDR44fnNIOLMaA4CgzXvWz5FWEv/4gJwC0AjeW3250u42t/lSZ+UYAgBVpbaA1
+/VsJANdPdf5LNCUTzmbV/lRF/++xVRJyzbh3EgHgxzNFfggbL4DL1chgyteUF4Wp
+AQBfiwPd6VRJ/32mBQB0D5YXs5xnF8uHBhcOKQDJZAEWcBsBBqNvEp1LgJFf57yi
+BWxKgDztlZriNrhKCXBl/1Dfg9WRowAwvkOUpV+u0p/d9D1Y91DfZGVlZfWf6A8T
+UsA4U6JRLQAAAABJRU5ErkJggg=="/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#clip_0)">
+<g mask="url(#mask_1)">
+<g transform="matrix(-.28125,0,-0,.28125,27,0)">
+<image id="image_3" width="96" height="96" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAIAAABt+uBvAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABQElEQVR4nO2QSwKDIBDFvP+l2023NYLMB032vAk5DhEREREREXki
+nzCqf7aCuDpPaBRdZ+9GOXU2bmQgwEBnZNbZspGBAAOdkV9ns0YGAl4XqOrD0Zjm
+EtZhDARYhzEQYCDAQICBAAMBBgIMBBgI6BtoC40as01lMpyGbRoqNVLpadXFo61Y
+C4nObvUGzfUyDRY+idDLMLhzpdawMlDa8+kTSYHunyiULAtUMjK6byDYNxDsGwj2
+DQT7BoJ9A8G+gWC/MtDQiULJjED/zqc9nz5RHOjilVrDpEDnBgufROh1NWiut9xg
+RqKzW4TEjEdbsSCPGZWeVnEqMzYNlUJtRp1ayeQ5XTFrolFp1gQDAQYCDAQYCDAQ
+YCDAQICBAAMBBgIMBBgIGA70qkYzdQxkox/zdR6faUEaERERERERCeALELLaHT6G
+jywAAAAASUVORK5CYII="/>
+</g>
+</g>
+</g>
+</g>
+</svg>

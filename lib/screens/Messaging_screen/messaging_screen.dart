@@ -1,19 +1,51 @@
 import 'package:ellawell/CustomWidgets/custom_bottom_navigation_bar.dart';
 import 'package:ellawell/CustomWidgets/sized_box_widgets.dart';
+import 'package:ellawell/screens/Messaging_screen/components/Stories.dart';
 import 'package:ellawell/screens/Messaging_screen/components/chats_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../CustomWidgets/Custom_Text.dart';
 import '../../CustomWidgets/custom_appbar.dart';
 import '../../UTILS/colors.dart';
+import '../../UTILS/images.dart';
 
 
-
-
-class MessagingScreen extends StatelessWidget {
-  const MessagingScreen({Key? key}) : super(key: key);
+class MessagingScreen extends StatefulWidget {
+   MessagingScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  State<MessagingScreen> createState() => _MessagingScreenState();
+
+
+}
+
+class _MessagingScreenState extends State<MessagingScreen> with SingleTickerProviderStateMixin{
+  late TabController tabController;
+  int currentTabIndex = 0;
+
+
+
+  @override
+  void initState() {
+    super.initState();
+    tabController = TabController(length: 3, vsync: this);
+    tabController.addListener(() {
+      setState(() {
+        currentTabIndex = tabController.index;
+      });
+    });
+  }
+
+
+  @override
+  void dispose() {
+    tabController.dispose();
+    super.dispose();
+  }
+
+    @override
+    Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(
         height: 100.h(context),
@@ -21,11 +53,14 @@ class MessagingScreen extends StatelessWidget {
           child: Row(
             children: [
               145.width(context),
-              Image(image: AssetImage('assets/images/ellavell-logo.png')),
+              SvgPicture.asset(Images.elavell_logo),
+
               120.width(context) ,
               Container(
                   height: 20,
-                  child: Image(image: AssetImage('assets/images/setttings.png', ))),
+
+                  child:  SvgPicture.asset(Images.settings),
+                 ),
             ],
           ),
         ),
@@ -56,6 +91,7 @@ class MessagingScreen extends StatelessWidget {
                        color: Colors.black.withOpacity(0.5),
 
                        child: TabBar(
+                         controller: tabController,
                          indicatorColor: Colors.white,
                          indicatorSize: TabBarIndicatorSize.label,
                          tabs: [
@@ -89,29 +125,67 @@ class MessagingScreen extends StatelessWidget {
                ),
              ) ,
 
-
+             10.height(context),
              Expanded(
                child: TabBarView(
+                  controller: tabController,
                    children: [
-
                      ChatScreen(),
+                     StoriesScreen()
                    ]
                ),
-             )
+             ),
            ],
          ),
         ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Add your action here
-          print('Floating Action Button Pressed');
-        },
-        child: Icon(Icons.add),
-        backgroundColor: Colors.blue, // Background color of the button
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+       floatingActionButton: buildFloatingActionButton(),
 
       bottomNavigationBar: CustomNavigationBar(),
     );
+  }
+  Widget buildFloatingActionButton() {
+    switch (currentTabIndex) {
+      case 0:
+        return SpeedDial(
+          child: Icon(Icons.add),
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blue,
+          tooltip: 'Speed Dial',
+          childPadding: EdgeInsets.all(2.0),
+          children: [
+            SpeedDialChild(
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+                child: SvgPicture.asset(Images.typing),
+             // label: 'Camera',
+              onTap: (){}
+            ),
+
+            SpeedDialChild(
+              backgroundColor: Colors.blue,
+              foregroundColor: Colors.white,
+              child: SvgPicture.asset(Images.search,height: 28,),
+             // label: 'Gallery',
+              onTap: () {
+                // Handle the gallery action here for Tab 1
+              },
+            ),
+          ],
+        );
+      case 1:
+        return FloatingActionButton(
+          onPressed: () {},
+          child:SvgPicture.asset(Images.Camera),
+          backgroundColor: Colors.blue,
+
+        );
+      default:
+        return FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.phone),
+          backgroundColor: Colors.blue,
+
+        );
+    }
   }
 }

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="28pt" height="28pt" viewBox="0 0 28 28">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(1,0,0,-1,0,28)" d="M0 28H28V0H0V28Z"/>
+</clipPath>
+<mask id="mask_1">
+<g transform="matrix(.5833334,0,0,.5833334,0,0)">
+<image id="image_2" width="48" height="48" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAAAAAByaaZbAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABM0lEQVR4nGNgGACg3X/ly5crfVpEKmeb/Oc/GPyZwEqU+t3/4WAn
+MTom/0cCEwir1wa556ofL6//NSDjtyZBDf0g9XwgFv91ILOXoIarQFX+EGYgkHmZ
+oIZPQFW8ECYfkPmJoAaQV7Gxqa0BkxzVMKphVMMg0gAqOyytgcRHIjXs/Q8Fu4nU
+4AXT4EGkBoZGiPp6BoIaQK7nAdKeez592g00n4H3P/7y7yZQXg9ZwAAocAOPhvVA
++SpkgRqgwFo8GhKA8i94EHzel0CBODwaBN4DFaxghHEZVwK57/jxaGAoB4XKCmiJ
+zwtS/78Yn3oGjpMgNS9rDHl4DGtA7vl/jB2vBgaph/9RwAMJ/OoZGCSPI6s/RlA9
+AwN76TuY8nfFBNwDBQLx665//nx9bRze8KEVAAB3Ij3pThRcqQAAAABJRU5ErkJggg=="/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#clip_0)">
+<g mask="url(#mask_1)">
+<g transform="matrix(.5833334,0,0,.5833334,0,0)">
+<image id="image_3" width="48" height="48" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAHUlEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAwK8BGzAAAT6vbsQA
+AAAASUVORK5CYII="/>
+</g>
+</g>
+</g>
+</g>
+</svg>

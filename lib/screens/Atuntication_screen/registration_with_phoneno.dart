@@ -6,6 +6,8 @@ import 'package:ellawell/UTILS/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../UTILS/images.dart';
+
 
 class PhoneSignup extends StatefulWidget {
   const PhoneSignup ({Key? key}) : super(key: key);
@@ -61,11 +63,13 @@ class PhoneSignup extends StatefulWidget {
                             fontsize: 16
                         ),
                      10.width(context),
-                     Image(image: AssetImage('assets/images/flag.png'))
+
+                         SvgPicture.asset(Images.countryflag),
+
                       ],
                     ),
 
-                    SvgPicture.asset("assets/images/dropdownarrow.svg"),
+                    SvgPicture.asset(Images.dropdownarrow),
                   ],
                 ),
               ),
@@ -128,7 +132,7 @@ class PhoneSignup extends StatefulWidget {
                                 ),
                               ),
 
-                             SvgPicture.asset('assets/images/add.svg'),
+                             SvgPicture.asset(Images.plus),
                             ],
                           ),
                         ),

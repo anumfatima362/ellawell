@@ -20,6 +20,7 @@ const Map<int, Color> PrimarySwatch = {
 
 //black shade
 const  black = Color.fromRGBO(0, 0, 0, 1);
+const  darkblack = Color.fromRGBO(16, 16, 16, 1);
 const inactive_thumb_color = Color.fromRGBO(86,85,99,1);
 const inactive_track_color = Color.fromRGBO(158,158,158,1);
 const date_color = Color.fromRGBO(153,153,153,1);
@@ -30,6 +31,8 @@ const date_color = Color.fromRGBO(153,153,153,1);
 
 //White
 const  white = Color.fromRGBO(255, 255, 255, 1);
+const  dividercolor = Color.fromRGBO(255, 255, 255, 0.45);
+
 const  offwhite = Color.fromRGBO(247, 247,247, 1);
 const  darkwhite = Color.fromRGBO(248,248,248,1);
 const   circular_avatar_color = Color.fromRGBO(229,229,229,1);
@@ -58,6 +61,10 @@ const   textcolor = Color.fromRGBO(98,98,98,1);
 
 //BLUE
 const   blue = Color.fromRGBO(12,149,255,1);
+
+
+//green
+const   green = Color.fromRGBO(41,209,103,1);
 
 
 

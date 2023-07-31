@@ -8,8 +8,8 @@ class CustomText extends StatelessWidget {
   final FontStyle? fontStyle;
   final Color colors;
   final TextAlign? textAlign;
-
-  const CustomText({Key? key, required this.text, required this.fontWeight, required this.colors, this.fontStyle, required this.fontsize, this.textAlign}) : super(key: key);
+   final String? fontFamily;
+  const CustomText({Key? key, required this.text, required this.fontWeight, required this.colors, this.fontStyle, required this.fontsize, this.textAlign,  this.fontFamily}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +22,7 @@ class CustomText extends StatelessWidget {
         fontSize: fontsize,
         color: colors,
         fontStyle: fontStyle,
+        fontFamily:fontFamily ,
       ),
     );
   }

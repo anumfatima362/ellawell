@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="29pt" height="29pt" viewBox="0 0 29 29">
+<defs>
+<clipPath id="clip_0">
+<path transform="matrix(1,0,0,-1,0,29)" d="M0 29H29V0H0V29Z"/>
+</clipPath>
+<mask id="mask_1">
+<g transform="matrix(.6041667,0,0,.6041667,0,0)">
+<image id="image_2" width="48" height="48" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAAAAAByaaZbAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAABAElEQVR4nGNgGAWDB8iu+fSfAPi0Xh1J/VtCykHgnSxcwxpi1P//
+vwqugaB7IOAjXAOIR8ibKGrI0rBZDp9yyUUYGv5/LWfGpZwp7eN/TA3//583w67e
+4CRUAbqG/39n8mIq5+r48x+bBt+HIPJpKLp63wcg8WdxmKEENQnV81KLIDbzYQ1W
+iFuRPA/1LNhvWOOBKe0TsudRDMARcVKrYE6AO1EeXQ0aJ+AxiPfI3/8RiH4cgE0N
+KgcpGME2EdSAiCiUiMSb+MChg5ZUCKRW2Q0bZFFFKE/eoxqoroHIguwDXMN64jSs
+hGtQf0eM+jcyCAfKrvpISPnHlUjqR8GAAwDG/m9Pi0niuQAAAABJRU5ErkJggg=="/>
+</g>
+</mask>
+</defs>
+<g>
+<g clip-path="url(#clip_0)">
+<g mask="url(#mask_1)">
+<g transform="matrix(.6041667,0,0,.6041667,0,0)">
+<image id="image_3" width="48" height="48" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAACXBIWXMAAA7EAAAO
+xAGVKw4bAAAAHUlEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAwK8BGzAAAT6vbsQA
+AAAASUVORK5CYII="/>
+</g>
+</g>
+</g>
+</g>
+</svg>

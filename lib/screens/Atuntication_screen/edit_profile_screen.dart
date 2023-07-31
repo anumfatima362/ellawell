@@ -5,16 +5,14 @@ import 'package:ellawell/UTILS/colors.dart';
 import 'package:flutter/material.dart';
 
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+class EditProfile extends StatefulWidget {
+  const EditProfile({Key? key}) : super(key: key);
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<EditProfile> createState() => _EditProfileState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
-
-
+class _EditProfileState extends State<EditProfile> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
