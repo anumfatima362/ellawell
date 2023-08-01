@@ -205,7 +205,7 @@ class _PolicyScreenState extends State<PolicyScreen> {
 
                        GestureDetector(
                          onTap: (){
-                           Navigator.pushNamed(context, RouterHelper.home_screen);
+                           Navigator.pushNamed(context, RouterHelper.edit_profile_screen);
                          },
                          child: Container(
                          height: 35.h(context),

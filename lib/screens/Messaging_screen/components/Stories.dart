@@ -15,9 +15,6 @@ class StoriesScreen extends StatefulWidget {
 
 class _StoriesScreenState extends State<StoriesScreen>  {
 
-
-
-
    @override
   Widget build(BuildContext context) {
     return Column(
@@ -103,30 +100,75 @@ class _StoriesScreenState extends State<StoriesScreen>  {
         Expanded(
           child: ListView.builder(
                itemCount: 4,
+
               itemBuilder: (context, index){
                 return Padding(
-                  padding: const EdgeInsets.only( top: 10,),
-                  child: ListTile(
-                    leading: CircleAvatar(
-                      radius: 30,
-                      child: SvgPicture.asset(Images.girl_profile),
-                    ),
-                    title: CustomText(
-                        text: "Nicole",
-                        fontWeight: FontWeight.w600,
-                        colors: black,
-                        fontsize: 16,
-                      fontFamily: "Poppins",
-                    ),
+                  padding: const EdgeInsets.symmetric( horizontal: 15,vertical: 10),
+                  child: Row(
+                    children: [
 
-                    subtitle: CustomText(
-                      text: "Today,13:39",
-                      fontWeight: FontWeight.w500,
-                      colors: date_color,
-                      fontsize: 12,
-                      fontFamily: "Poppins",
-                    ),
-                  ),
+                      Container(
+                        height: 75.h(context),
+                        width: 75.w(context),
+                        decoration: BoxDecoration(
+                          color: white,
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: blue,
+                            width: 3,
+
+                          ),
+                        ),
+                        child:Stack(
+                            children:[
+                              Positioned(
+                                left: 3.w(context),
+                                top: 2.h(context),
+                                child: Container(
+                                  height: 63.h(context),
+                                  width: 63.w(context),
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: SvgPicture.asset(Images.girl_profile),
+                                ),
+                              ),
+                            ]
+                        ),
+                      ),
+
+                     15.width(context),
+
+                     Column(
+                       mainAxisAlignment: MainAxisAlignment.start,
+                       crossAxisAlignment: CrossAxisAlignment.start,
+                       children: [
+
+                         CustomText(
+                           text: "Nicole",
+                           fontWeight: FontWeight.w600,
+                           colors: black,
+                           fontsize: 16,
+                           fontFamily: "Poppins",
+                         ),
+
+
+
+
+                         CustomText(
+                           text: "Today,13:39",
+                           fontWeight: FontWeight.w500,
+                           colors: date_color,
+                           fontsize: 12,
+                           fontFamily: "Poppins",
+                         ),
+
+                       ],
+                     )
+
+
+                    ],
+                  )
                 );
 
 

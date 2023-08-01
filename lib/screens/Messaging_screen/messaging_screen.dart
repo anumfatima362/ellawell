@@ -68,74 +68,84 @@ class _MessagingScreenState extends State<MessagingScreen> with SingleTickerProv
 
      body:DefaultTabController(
          length: 3,
-         child:  Column(
-           children: [
+         child:  SingleChildScrollView(
+           child: Column(
+             children: [
 
-             Container(
-               height: 95.h(context),
-               width: 390.w(context),
-               decoration: BoxDecoration(
-                 // color: Colors.red,
-                 image: DecorationImage(
-                   image: AssetImage('assets/images/frames.png'),
-                   fit: BoxFit.cover,
+               Container(
+                 height: 95.h(context),
+                 width: 390.w(context),
+                 decoration: BoxDecoration(
+                   // color: Colors.red,
+                   image: DecorationImage(
+                     image: AssetImage('assets/images/frames.png'),
+                     fit: BoxFit.cover,
+                   ),
                  ),
-               ),
-               child: Stack(
-                 children: [
-                   Positioned(
-                     top: 50,
-                     child: Container(
-                       height: 35.h(context),
-                       width: 390.w(context),
-                       color: Colors.black.withOpacity(0.5),
+                 child: Stack(
+                   children: [
+                     Positioned(
+                       top: 50,
+                       child: Container(
+                         height: 35.h(context),
+                         width: 390.w(context),
+                         color: Colors.black.withOpacity(0.5),
 
-                       child: TabBar(
-                         controller: tabController,
-                         indicatorColor: Colors.white,
-                         indicatorSize: TabBarIndicatorSize.label,
-                         tabs: [
-                        CustomText(
-                            text: "CHATS",
-                            fontWeight: FontWeight.w600,
-                            colors: white,
-                            fontsize: 16,
-                        ),
+                         child: TabBar(
+                           controller: tabController,
+                           indicatorColor: Colors.white,
+                           indicatorSize: TabBarIndicatorSize.label,
+                           tabs: [
+                          CustomText(
+                              text: "CHATS",
+                              fontWeight: FontWeight.w600,
+                              colors: white,
+                              fontsize: 16,
+                          ),
 
-                           CustomText(
-                             text: "STORIES",
-                             fontWeight: FontWeight.w600,
-                             colors: white,
-                             fontsize: 16,
-                           ),
+                             CustomText(
+                               text: "STORIES",
+                               fontWeight: FontWeight.w600,
+                               colors: white,
+                               fontsize: 16,
+                             ),
 
 
-                           CustomText(
-                             text: "CALLS",
-                             fontWeight: FontWeight.w600,
-                             colors: white,
-                             fontsize: 16,
-                           ),
+                             CustomText(
+                               text: "CALLS",
+                               fontWeight: FontWeight.w600,
+                               colors: white,
+                               fontsize: 16,
+                             ),
 
-                         ],
+                           ],
+                         ),
                        ),
                      ),
-                   ),
-                 ],
-               ),
-             ) ,
+                   ],
+                 ),
+               ) ,
 
-             10.height(context),
-             Expanded(
-               child: TabBarView(
-                  controller: tabController,
-                   children: [
-                     ChatScreen(),
-                     StoriesScreen()
-                   ]
+               10.height(context),
+
+               Container(
+                 height: MediaQuery.of(context).size.height,
+                  width: MediaQuery.of(context).size.width,
+                 child: TabBarView(
+                    controller: tabController,
+                     children: [
+                       Container(
+                           height:MediaQuery.of(context).size.height,
+                           width: MediaQuery.of(context).size.width,
+                           child: ChatScreen()),
+                       StoriesScreen(),
+                       StoriesScreen(),
+
+                     ]
+                 ),
                ),
-             ),
-           ],
+             ],
+           ),
          ),
         ),
        floatingActionButton: buildFloatingActionButton(),

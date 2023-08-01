@@ -33,6 +33,13 @@ import 'package:flutter/material.dart';
   static const String white_angled_triagle = 'assets/images/white_frame.svg';
   static const String unsplash = 'assets/images/Unsplash.svg';
   static const String image = 'assets/images/pictureimage.svg';
+  static const String colored_background_home = 'assets/images/colored_background_home.svg';
+  static const String colored_profile = 'assets/images/colored_profile.svg';
+  static const String colored_email = 'assets/images/colored_email.svg';
+  static const String colored_wallet = 'assets/images/colored_wallet.svg';
+
+
+
 
 
 

@@ -98,58 +98,61 @@ class _EditProfileState extends State<EditProfile> {
                ),
 
                10.height(context) ,
-                    Expanded(
-                        child:  TabBarView(
-                              children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(20.0),
-                                    child: Container(
-                                      height: 10,
-                                      decoration: BoxDecoration(
-                                        color: Colors.greenAccent,
-                                        borderRadius: BorderRadius.circular(12)
-                                      ),
-                                      child: TextField(
-                                        decoration: InputDecoration(
-                                          contentPadding: EdgeInsets.symmetric( horizontal: 10, vertical: 15),
-                                          border: InputBorder.none,
-                                           hintText:'Your name' ,
-                                           hintStyle: TextStyle(
-                                            fontSize: 14,
-                                             fontWeight: FontWeight.w500,
 
-                                          ),
-                                      ),
-                                       ),
-                                    ),
-                                  ),
 
+                    Container(
+                      height: 80,
+                      width: 350,
+                      child: TabBarView(
+                            children: [
                                 Padding(
                                   padding: const EdgeInsets.all(20.0),
                                   child: Container(
-                                    height: 10,
+                                    height: 50,
+                                    width: 150,
                                     decoration: BoxDecoration(
-                                        color: offwhite,
-                                        borderRadius: BorderRadius.circular(12)
+                                      color: Colors.greenAccent,
+                                      borderRadius: BorderRadius.circular(12)
                                     ),
                                     child: TextField(
                                       decoration: InputDecoration(
                                         contentPadding: EdgeInsets.symmetric( horizontal: 10, vertical: 15),
                                         border: InputBorder.none,
-                                        hintText:'Your username' ,
-                                        hintStyle: TextStyle(
+                                         hintText:'Your name' ,
+                                         hintStyle: TextStyle(
                                           fontSize: 14,
-                                          fontWeight: FontWeight.w500,
-
+                                           fontWeight: FontWeight.w500,
                                         ),
+                                      ),
+                                     ),
+                                  ),
+                                ),
+
+                              Padding(
+                                padding: const EdgeInsets.all(20.0),
+                                child: Container(
+                                  height: 10,
+                                  decoration: BoxDecoration(
+                                      color: offwhite,
+                                      borderRadius: BorderRadius.circular(12)
+                                  ),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      contentPadding: EdgeInsets.symmetric( horizontal: 10, vertical: 15),
+                                      border: InputBorder.none,
+                                      hintText:'Your username' ,
+                                      hintStyle: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500,
+
                                       ),
                                     ),
                                   ),
                                 ),
-                               ],
-                               ),
-
-                      ),
+                              ),
+                             ],
+                             ),
+                    ),
 
 
             Divider(),
@@ -189,9 +192,6 @@ class _EditProfileState extends State<EditProfile> {
               ),
             ),
 
-              Container(
-                height: 190.h(context),
-              ),
             ],
           ),
         ),
